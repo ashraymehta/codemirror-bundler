@@ -6,7 +6,8 @@
   "scripts": {
     "clean": "rm -rf dist",
     "prebuild": "npm run clean",
-    "build": "webpack"
+    "build": "webpack",
+    "test-site": "node test-site/server.js"
   },
   "dependencies": {
     "@codemirror/next": "^0.10.0",
