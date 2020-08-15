@@ -4,6 +4,8 @@
   "description": "A tiny project to bundle codemirror.next modules into a single js file",
   "main": "index.js",
   "scripts": {
+    "clean": "rm -rf dist",
+    "prebuild": "npm run clean",
     "build": "webpack"
   },
   "dependencies": {
