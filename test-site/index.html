@@ -1,0 +1,23 @@
+<html>
+<head>
+    <script type="text/javascript" src="codemirror.js"></script>
+
+    <script>
+        window.onload = () => {
+            new CodeMirror.EditorView({
+                state: CodeMirror.EditorState.create({
+                    doc: 'console.log("hello")',
+                    extensions: [
+                        CodeMirror.basicSetup,
+                        CodeMirror.tagExtension(Symbol("language"), CodeMirror.javascript({typescript: true})),
+                    ]
+                }),
+                parent: document.querySelector("#editor")
+            });
+        }
+    </script>
+</head>
+<body>
+    <div id="editor"></div>
+</body>
+</html>
