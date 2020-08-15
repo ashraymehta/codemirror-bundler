@@ -1,0 +1,19 @@
+{
+  "name": "codemirror-bundler",
+  "version": "1.0.0",
+  "description": "A tiny project to bundle codemirror.next modules into a single js file",
+  "main": "index.js",
+  "dependencies": {
+    "@codemirror/next": "^0.10.0"
+  },
+  "devDependencies": {
+    "@types/node": "^14.0.27",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  },
+  "scripts": {
+    "build": "webpack"
+  },
+  "author": "",
+  "license": "ISC"
+}
